@@ -7,7 +7,7 @@
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href='css/woce.css' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+<link href='fonts/open_sans.css' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
@@ -71,7 +71,7 @@
       <div class="col-sm-6">
         <div class="well">
           <a href="http://woceatlas.tamu.edu/">
-            <img class="img-responsive" src="img/southern.png">
+            <img class="img-responsive" src="img/southern.png" title="Go to Southern Atlas">
           </a>
         </a>
       </div> 
@@ -79,7 +79,7 @@
     <div class="col-sm-6">
       <div class="well">
         <a href="http://www-pord.ucsd.edu/whp_atlas/pacific_index.html">
-          <img class="img-responsive" src="img/pacific.jpg">
+          <img class="img-responsive" src="img/pacific.jpg" title="Go to Pacific Atlas">
         </a>
       </div>
     </div><!-- /.col-md-3 -->
@@ -88,13 +88,13 @@
     <div class="col-sm-6">
       <div class="well">
         <a href="http://www-pord.ucsd.edu/whp_atlas/atlantic_index.html">
-          <img class="img-responsive" src="img/atlantic.jpg">
+          <img class="img-responsive" src="img/atlantic.jpg" title="Go to Atlantic Atlas">
         </div>
       </div><!-- /.col-md-3 -->
       <div class="col-sm-6">
         <div class="well">     
           <a href="http://www-pord.ucsd.edu/whp_atlas/indian_index.html">     
-            <img class="img-responsive" src="img/indian.jpg">
+            <img class="img-responsive" src="img/indian.jpg" title="Go to Indian Atlas">
           </a>
         </div>
       </div><!-- /.col-md-4 -->
@@ -215,14 +215,7 @@
   </div>
 
 </div>
-<script>
-$('.row .btn').on('click', function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    var $collapse = $this.closest('.collapse-group').find('.collapse');
-    $collapse.collapse('toggle');
-    });
-</script>
+
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
