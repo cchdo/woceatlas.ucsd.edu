@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>WOCE Atlas</title>
+  <title>WOCE Atlas</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href='css/woce.css' rel='stylesheet' type='text/css'>
-<link href='fonts/open_sans.css' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href='css/woce.css' rel='stylesheet' type='text/css'>
+  <link href='fonts/open_sans.css' rel='stylesheet' type='text/css'>
+
+  <style>
+    button.btn.collapsed:before
+    {
+        content:'See More >>' ;
+        display:block;
+    }
+    button.btn:before
+    {
+        content:'See Less >>' ;
+        display:block;
+    }
+  </style>
 
 </head>
 <body>
@@ -128,12 +141,17 @@
       distributions of basic properties.</p>
 
       <div class="text-center">
-        <a class="btn" data-toggle="collapse" data-target="#demo">
-          See More &raquo;
+        <br>
+        <button class="btn btn-normal collapsed" data-toggle="collapse" data-target="#about"></button>
+
+        <!--<a class="btn" data-toggle="collapse" data-target="#about">
+          See More &raquo;-->
         </a>
       </div>
+
       <br>
-      <div id="demo" class="collapse">
+
+      <div id="about" class="collapse">
         <p>
         Each of the 4 basin-oriented volumes includes: 
         <ul>
@@ -154,7 +172,6 @@
         for 45 depth levels between the surface and 6000 meters with 0.5 
         degree resolution along latitude and longitude.  The climatology 
         website is <a href="http://icdc.zmaw.de/woce.html">http://icdc.zmaw.de/woce.html</a>.</p>
-
       </div>
 
     </div>
@@ -180,7 +197,7 @@
 
       <div class="col-sm-6">
         <h3>Request an Atlas</h3>
-        <p>To request a print version of an atlas, please send email to <a href="mailto:woceatlas@ucsd.edu">woceatlas@ucsd.edu</a>.</p>
+        <p>To contact us or request a print version of an atlas, please send an email to <a href="mailto:woceatlas@ucsd.edu">woceatlas@ucsd.edu</a>.</p>
         <p></p>
       </div>
 
@@ -196,6 +213,9 @@
 <div class="footer">
 
   <div class="container">
+    <a href="http://www.ifm.zmaw.de/en">
+      <img src="http://www-pord.ucsd.edu/whp_atlas/atlantic/images/uhamburg_logo.jpeg" height="42" alt="" border="0">
+    </a>
     <a href="http://www.awi.de/en">
       <img src="http://www-pord.ucsd.edu/whp_atlas/atlantic/images/logo-hs_bhv-awi-print.jpg" height="42" alt="" border="0">
     </a>
